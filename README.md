@@ -59,23 +59,6 @@ Elle offre une interface conviviale pour l’administration des ressources humai
 
 ---
 
-## ✉️ Configuration des emails
-
-L'application utilise _Gmail SMTP_ pour envoyer des emails aux utilisateurs lors de la création de compte.
-
-Configurer votre fichier .env comme suit :
-
-````dotenv
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=votre.email@gmail.com
-MAIL_PASSWORD=mot_de_passe_de_l'application
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS="votre.email@gmail.com"
-MAIL_FROM_NAME="Gestion Employer"
-
-
 ## 👀 Aperçu de l'application
 
 ### 🔐 Page de connexion
@@ -95,19 +78,39 @@ MAIL_FROM_NAME="Gestion Employer"
 ![Liste des permissions](images/permissions-list.png)
 
 ---
+
 ### 📄 Liste des paiements
+
 ![Liste des paiements](images/payment-list.png)
 
 ---
 
 ### 🧾 Facture de paiement (PDF généré)
-![Facture de paiement](images/payment-facture.png)
 
+![Facture de paiement](images/payment-facture.png)
 
 ### ➕ Ajout d’un rôle
 
 ![Ajout de rôle](images/add-role.png)
-Écrire à Zahrati Malaki
+
+## ✉️ Configuration des emails
+
+L'application utilise _Gmail SMTP_ pour envoyer des emails aux utilisateurs lors de la création de compte.
+
+Configurer votre fichier .env comme suit :
+
+````dotenv
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=votre.email@gmail.com
+MAIL_PASSWORD=mot_de_passe_de_l'application
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="votre.email@gmail.com"
+MAIL_FROM_NAME="Gestion Employer"
+
+
+
 
 ## 📦 Installation
 
