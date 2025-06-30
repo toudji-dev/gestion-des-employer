@@ -1,0 +1,7 @@
+// Dans app/Console/Kernel.php
+protected function schedule(Schedule $schedule)
+{
+    $schedule->call(function () {
+        // Code pour générer et enregistrer les paiements de salaires ici
+    })->monthlyOn(1, '00:00');
+}
